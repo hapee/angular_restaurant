@@ -1,0 +1,5 @@
+<h2>Pick your favorite:</h2>
+<a ui-sref="home">Home</a> ;nbsp &lt; ;nbsp <span>Categories</span>
+<ul>
+    <li ng-repeat="category in $ctrl.list" ui-sref="items({categoryShortName: category.short_name})">{{category.name}}</li>
+</ul>
